@@ -8,7 +8,7 @@
 import numpy as np
 
 class ikSolver:
-    def __init__(self, l1=130, l2=130, d4=150, d6=150, zero_joint=0):
+    def __init__(self, l1=130, l2=130, d4=160, d6=140, zero_joint=0):
         self.L1=l1    # Limb 1 length
         self.L2=l2    # Limb 2 length
         self.D4=d4    # Upper wrist length
