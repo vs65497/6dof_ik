@@ -4,15 +4,15 @@ ID - Motor x - Extended - DEFAULT
 2 - Motor 2 - 0 - 700
 3 - Motor 3 - 1000 - 200
 4 - Motor 4 - 0(Left) - 450 - 900(Right)
-5 - Motor 5 - 850(Contracted) - 800 - 410(0 Degrees)
+5 - Motor 5 - 800(Contracted) - 700 - 360(0 Degrees)
 6 - Motor 6 - 0(CCW) - 500 - 1000(CW)
 
-Ranges (low-high) - (range) - (center)
+Ranges (low-high) - (range) - (center) - REST
 1 - 1000-530 - (270-143.1) - 206.55 - REST 243
-2 - 700-0 - (16-90) - X - REST 189
+2 - 700-200 - (16-90) - X - REST 189
 3 - 200-1000 - (54-270) - X - REST 54
 4 - 0-900 - (0-243) - 121.5 - REST 121.5
-5 - 850-0 - (229.5-0) - 110.7 - REST 216
+5 - 800-0 - (216-0) - 97.2 - REST 189
 6 - 0-1000 - (0-270) - 135 - REST 135
 
 0 Degrees
@@ -20,7 +20,7 @@ Ranges (low-high) - (range) - (center)
 2 - 759.259
 3 - 1000
 4 - 450
-5 - 410
+5 - 360
 6 - 500
 
 Test

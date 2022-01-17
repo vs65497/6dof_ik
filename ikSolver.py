@@ -34,6 +34,11 @@ class ikSolver:
             l1
         ]
         self.orientation = [0,0,0]
+        self.init_ee = self.current_ee
+
+        # reserved for external manipulation.
+        # this way can reset when joint limit exceeded.
+        self.last_confirmed = self.current_ee
 
     # FIND_SINGULARITY
     # Determinant of Jacobian to find singularities.
@@ -198,7 +203,7 @@ class ikSolver:
     # returns a calculated EE position based on provided angles
     #  - should provide encoder read angles in an array []
     #  - angles in RADIANS
-    def find_ee(self, *angles):
+    def find_ee(self, angles):
         a1 = self.lengths[0]
         a2 = self.lengths[1]
         a3 = self.lengths[2]
@@ -270,12 +275,27 @@ class ikSolver:
             n/m * z1 + z0
         ]
 
-        print("============")
+        """ print("============")
         print("new_ee",new_ee)
-        show_angles(self.joint_angles)
+        show_angles(self.joint_angles) """
         
         self.solve(new_ee)
     
+    def show_angles(self):
+        angles = self.joint_angles
+        t1 = angles[0]
+        t2 = angles[1]
+        t3 = angles[2]
+        t4 = angles[3]
+        t5 = angles[4]
+        t6 = angles[5]
+        print('Theta 1: ',round(t1*180/np.pi,5))
+        print('Theta 2: ',round(t2*180/np.pi,5))
+        print('Theta 3: ',round(t3*180/np.pi,5))
+        print('Theta 4: ',round(t4*180/np.pi,5))
+        print('Theta 5: ',round(t5*180/np.pi,5))
+        print('Theta 6: ',round(t6*180/np.pi,5))
+
     # SOLVE
     # Accepts a position (optional) and rotation (optional) of the End Effector
     #  - if no position is given, a default will be provided
@@ -437,23 +457,9 @@ class ikSolver:
             print("Request",pos)
             print("Calc EE",all_joints[6])
             print("All joints",all_joints)
-            show_angles(self.joint_angles)
+            self.show_angles()
 
         return self.joint_angles
-
-def show_angles(angles):
-    t1 = angles[0]
-    t2 = angles[1]
-    t3 = angles[2]
-    t4 = angles[3]
-    t5 = angles[4]
-    t6 = angles[5]
-    print('Theta 1: ',round(t1*180/np.pi,5))
-    print('Theta 2: ',round(t2*180/np.pi,5))
-    print('Theta 3: ',round(t3*180/np.pi,5))
-    print('Theta 4: ',round(t4*180/np.pi,5))
-    print('Theta 5: ',round(t5*180/np.pi,5))
-    print('Theta 6: ',round(t6*180/np.pi,5))
 
 if __name__ == '__main__':
 
@@ -462,6 +468,6 @@ if __name__ == '__main__':
     arm.solve()
 
     # Output
-    show_angles(arm.joint_angles)
+    arm.show_angles()
     print("EE:",arm.current_ee)
     print("Positions:",arm.get_joint_positions())
