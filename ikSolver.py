@@ -1,4 +1,4 @@
-
+# Von Simmons
 # 8.20.21
 # Inverse Kinematics solver for robotic arm with 6DoF
 # Based on Lectures from Angela Sodemann and Elias Brassitos
