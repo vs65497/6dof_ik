@@ -23,7 +23,7 @@ Wrote an Inverse Kinematics Solver for robotic arm with 6 degrees of freedom in 
  - _Servo Test_: https://youtu.be/0N8iMFF4bWM
 ## Code
 Here is code for actually running the arm.
- - **_MAIN**: PS4 Game Pad and Servo Controller_: https://github.com/zanzivyr/6dof_ik/blob/main/main.py
+ - _PS4 Game Pad and Servo Controller_: https://github.com/zanzivyr/6dof_ik/blob/main/main.py
  - _IK Solver_: https://github.com/zanzivyr/6dof_ik/blob/main/ikSolver.py
 ## Notes
 Most of this project was actually mathematics. Below are the documents I wrote before coding.
