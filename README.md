@@ -21,16 +21,19 @@ Wrote an Inverse Kinematics Solver for robotic arm with 6 degrees of freedom in 
  - _IK Test for Rectangular Path_: https://youtu.be/0N8iMFF4bWM
  - _Test 2_: https://youtu.be/SbTDIftg9qU
  - _Servo Test_: https://youtu.be/0N8iMFF4bWM
+
 ## Code
 Here is code for actually running the arm.
  - _PS4 Game Pad and Servo Controller_: https://github.com/zanzivyr/6dof_ik/blob/main/main.py
  - _IK Solver_: https://github.com/zanzivyr/6dof_ik/blob/main/ikSolver.py
+
 ## Notes
 Most of this project was actually mathematics. Below are the documents I wrote before coding.
  - _Inverse Kinematics Algorithm_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/ik_calculations_v2.pdf
  - _Jacobian Pseudo Inverse_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/jacobian_pseudo_inverse.pdf
  - _Matlab_: https://github.com/zanzivyr/6dof_ik/blob/main/arm_matlab.mat
 
+## Custom 3D Engine (Simulation)
 Converted my 3D engine for simulating the arm. This helped to sort out some of my problems before getting to the physical arm.
 - _Simulator Update_: https://youtu.be/RmtcbHyHOPE
   - Pathing Simulator (Incomplete): https://github.com/zanzivyr/6dof_ik/blob/main/pathing_sim.py
