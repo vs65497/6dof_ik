@@ -15,9 +15,9 @@ Converted my 3D engine for simulating the arm. This helped to sort out some of m
 
 ## Path Planner
 Attempted to write a smooth path planner for the end-effector. The intended useage was the following:
-- 1) The user would use the controller to record multiple set points in the workspace
-- 2) These set points would be stored as a point-to-point path in the order received
-- 3) The Path Planner would extrapolate a smooth trajectory over these points
+1) The user would use the controller to record multiple set points in the workspace
+2) These set points would be stored as a point-to-point path in the order received
+3) The Path Planner would extrapolate a smooth trajectory over these points
 
 Algorithm Notes: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/path_planner_derivation.pdf
 
