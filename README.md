@@ -38,6 +38,7 @@ Converted my 3D engine for simulating the arm. Also ported from Javascript to Py
 - _Simulator Update_ (Python): https://youtu.be/RmtcbHyHOPE
   - Pathing Simulator (Incomplete): https://github.com/zanzivyr/6dof_ik/blob/main/pathing_sim.py
 - _Original 3D engine via Quaternions_ (Originally written in Javascript): https://youtube.com/shorts/hPEd5JOKDyQ
+  - Original Javascript: https://github.com/zanzivyr/3d-light
   - 3D Engine: https://github.com/zanzivyr/6dof_ik/blob/main/graphicsEngine.py
   - Custom Linear Algebra Package for 3D engine: https://github.com/zanzivyr/6dof_ik/blob/main/linalg_graphics.py
 
