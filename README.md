@@ -2,9 +2,20 @@
 
 <img src="https://zanzivyr.github.io/home/images/demo/arm_crop.jpg" height="360"> [![IK Solving Test for Rectangular Path 1](https://img.youtube.com/vi/0N8iMFF4bWM/0.jpg)](https://youtu.be/0N8iMFF4bWM)
 
-Wrote an Inverse Kinematics Solver for robotic arm with 6 degrees of freedom in python. Number crunching using Matlab. 
+Wrote an Inverse Kinematics Solver for robotic arm with 6 degrees of freedom in python. Number crunching using Matlab. I attempted many things in this project. The documentation below is to organize aspects of the project.
 
-This was a long and winding project in which I attempted many things. The documentation below is to organize aspects of the project.
+**Topics include:**
+- Python, Matlab
+- Linear Algebra, Calculus
+  - Bezier Curves, Curvature, Convex Shapes
+- Electronics
+  - LX-16A motor configuration and driver
+  - Serial communications
+  - PSMove Controller teardown (basic reverse engineering)
+- PSMoveAPI
+- 3D printing (PLA), Cura Slicer
+- Product Design
+- BOM Creation
 
 ## Videos
 Start here!
