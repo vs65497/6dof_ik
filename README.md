@@ -1,6 +1,6 @@
 # Robot Arm (6 Degrees of Freedom)
 
-![Image of the Arm](https://zanzivyr.github.io/home/images/demo/arm_crop.jpg "6DoF Arm")
+<img src="https://zanzivyr.github.io/home/images/demo/arm_crop.jpg" width="150" height="280">
 
 [![IK Solving Test for Rectangular Path 1](https://img.youtube.com/vi/0N8iMFF4bWM/0.jpg)](https://youtu.be/0N8iMFF4bWM)
 
