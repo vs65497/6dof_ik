@@ -2,8 +2,10 @@
 
 Wrote the Inverse Kinematics Solver for this in python. Number crunching using Matlab. 
 
+This was a long and winding project in which I attempted many things. The files and code are not well laid out, so the documentation below is my attempt to clarify it.
+
 ## Code
- - PS4 Game Pad and Servo Controller: https://github.com/zanzivyr/6dof_ik/blob/main/main.py
+ - MAIN: PS4 Game Pad and Servo Controller: https://github.com/zanzivyr/6dof_ik/blob/main/main.py
  - IK Solver: https://github.com/zanzivyr/6dof_ik/blob/main/ikSolver.py
  - Matlab: https://github.com/zanzivyr/6dof_ik/blob/main/arm_matlab.mat
 ## Notes
@@ -19,18 +21,21 @@ Converted my 3D engine for simulating the arm. This helped to sort out some of m
   - Pathing Simulator (Incomplete): https://github.com/zanzivyr/6dof_ik/blob/main/pathing_sim.py
 - Original 3D engine via Quaternions: https://youtube.com/shorts/hPEd5JOKDyQ
   - 3D Engine: https://github.com/zanzivyr/6dof_ik/blob/main/graphicsEngine.py
+  - Custom Linear Algebra Package for 3D engine: https://github.com/zanzivyr/6dof_ik/blob/main/linalg_graphics.py
 
 ## Path Planner
 Attempted to write a smooth path planner for the end-effector. The intended useage was the following:
 1) The user would use the controller to record multiple set points in the workspace
 2) These set points would be stored as a point-to-point path in the order received
-3) The Path Planner would extrapolate a smooth trajectory over these points
+3) The Path Planner would extrapolate a smooth trajectory over these points via 3D Bezier Curves
 
 ### Curvature Method (Newest)
+After a lot of introspection, the original method of using ellipses did not work because of non-convex shapes (the order of the points is important). So, instead, I used vectors and curvature. Combined with Bezier Curves, I imagined this would be much more efficient. Unfortunately, I had to end the project before being able to test this.
 - Derivation: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/pathing_curvature.pdf
 - Code: https://github.com/zanzivyr/6dof_ik/blob/main/pathing_curvature.py
 
-### Original Algorithm (Out of date)
+### Original Algorithm, Ellipse Method (Out of date)
+The Ellipse Method takes 3 points in R^3 space and tries to generate an ellipse. This ellipse then can give tangents which are used as handlebars for Bezier Curves. Thus creating a smooth path.
 - Derivation: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/path_planner_derivation.pdf
 - Code: https://github.com/zanzivyr/6dof_ik/blob/main/pathing.py
 
@@ -39,3 +44,6 @@ Attempted to write a smooth path planner for the end-effector. The intended usea
 - Motor Limits: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/motor_limits_math.pdf
 - Keyboard Test: https://github.com/zanzivyr/6dof_ik/blob/main/keyboard_test.py
 - Servo Test: https://github.com/zanzivyr/6dof_ik/blob/main/servo_test.py
+
+If you want to use LX-16A Motors like I did, then you'll need this zip.
+https://drive.google.com/file/d/1dBZVQSwtvPDnMTtPonr_dPYOlMWDc_09/view?usp=sharing
