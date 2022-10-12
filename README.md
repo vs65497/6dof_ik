@@ -2,7 +2,10 @@
 
 <img src="https://zanzivyr.github.io/home/images/demo/arm_crop.jpg" height="360"> [![IK Solving Test for Rectangular Path 1](https://img.youtube.com/vi/lz0mPY3OvsU/0.jpg)](https://youtu.be/lz0mPY3OvsU)
 
-August 2021 - January 2022, Personal Project. Wrote an Inverse Kinematics Solver for robotic arm with 6 degrees of freedom in python. Number crunching using Matlab. I attempted many things in this project. The documentation below is to organize aspects of the project.
+August 2021 - January 2022, Personal Project. Wrote an Inverse Kinematics Solver for robotic arm with 6 degrees of freedom in python. Number crunching using Matlab. I attempted many things in this project. Though the design of the arm is from Thingiverse, the rest of the assembly and code of the arm is original work. The documentation below is to organize aspects of the project.
+
+**The arm design comes from here:**
+https://github.com/RoboLabHub/RobotArm_v1.0
 
 ### Skills include:
 - Python, Javascript, Matlab
@@ -72,5 +75,5 @@ Unfortunately I couldn't get my computer to connect with my PSMove controller. S
 - _Keyboard Test_: https://github.com/zanzivyr/6dof_ik/blob/main/keyboard_test.py
 - _Servo Test_: https://github.com/zanzivyr/6dof_ik/blob/main/servo_test.py
 
-If you want to use LX-16A Motors like I did, then you'll need this zip.
+If you want to use LX-16A Motors you'll need this zip.
 https://drive.google.com/file/d/1dBZVQSwtvPDnMTtPonr_dPYOlMWDc_09/view?usp=sharing
