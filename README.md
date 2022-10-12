@@ -4,17 +4,20 @@ Wrote the Inverse Kinematics Solver for this in python. Number crunching using M
 
 This was a long and winding project in which I attempted many things. The documentation below is to organize aspects of the project.
 
-## Code
- - MAIN: PS4 Game Pad and Servo Controller: https://github.com/zanzivyr/6dof_ik/blob/main/main.py
- - IK Solver: https://github.com/zanzivyr/6dof_ik/blob/main/ikSolver.py
- - Matlab: https://github.com/zanzivyr/6dof_ik/blob/main/arm_matlab.mat
-## Notes
- - Inverse Kinematics Algorithm: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/ik_calculations_v2.pdf
- - Jacobian Pseudo Inverse: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/jacobian_pseudo_inverse.pdf
 ## Videos
+Start here!
  - IK Solving Test for Rectangular Path 1: https://youtu.be/0N8iMFF4bWM
  - Test 2: https://youtu.be/SbTDIftg9qU
  - Servo Test: https://youtu.be/0N8iMFF4bWM
+## Code
+Here is code for actually running the arm.
+ - MAIN: PS4 Game Pad and Servo Controller: https://github.com/zanzivyr/6dof_ik/blob/main/main.py
+ - IK Solver: https://github.com/zanzivyr/6dof_ik/blob/main/ikSolver.py
+## Notes
+Most of this project was actually mathematics. Below are the documents I wrote before coding.
+ - Inverse Kinematics Algorithm: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/ik_calculations_v2.pdf
+ - Jacobian Pseudo Inverse: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/jacobian_pseudo_inverse.pdf
+ - Matlab: https://github.com/zanzivyr/6dof_ik/blob/main/arm_matlab.mat
 
 Converted my 3D engine for simulating the arm. This helped to sort out some of my problems before getting to the physical arm.
 - Simulator Update: https://youtu.be/RmtcbHyHOPE
