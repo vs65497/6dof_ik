@@ -7,9 +7,9 @@ Wrote an Inverse Kinematics Solver for robotic arm with 6 degrees of freedom in 
 ### Topics include:
 - Python, Matlab
 - Linear Algebra, Calculus
-  - Bezier Curves, Curvature, Convex Shapes
+  - Inverse Kinematics (6dof), Bezier Curves, Convex Shapes
 - Electronics
-  - LX-16A motor configuration and driver
+  - LX-16A motor driver and configuration
   - Serial communications
   - PSMove Controller teardown (basic reverse engineering)
 - PSMoveAPI
