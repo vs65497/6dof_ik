@@ -19,7 +19,7 @@ August 2021 - January 2022, Personal Project. Wrote an Inverse Kinematics Solver
 - Product Design
 - BOM Creation
 
-## A. Arm, 6 Degrees of Freedom
+## A) Arm, 6 Degrees of Freedom
 
 ### Videos
  - _IK Test for Rectangular Path_: https://youtu.be/lz0mPY3OvsU
@@ -37,7 +37,7 @@ Most of this project was actually mathematics. Below are the documents I wrote b
  - _Jacobian Pseudo Inverse Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/jacobian_pseudo_inverse.pdf
  - _Matlab_: https://github.com/zanzivyr/6dof_ik/blob/main/arm_matlab.mat
 
-## B. Custom 3D Engine (Simulation)
+## B) Custom 3D Engine (Simulation)
 Converted my 3D engine for simulating the arm. Also ported from Javascript to Python. This helped to sort out some of my problems before getting to the physical arm.
 - _Simulator Update_: https://youtu.be/RmtcbHyHOPE
   - Pathing Simulator (Incomplete): https://github.com/zanzivyr/6dof_ik/blob/main/pathing_sim.py
@@ -46,7 +46,7 @@ Converted my 3D engine for simulating the arm. Also ported from Javascript to Py
   - Python Port, 3D Engine: https://github.com/zanzivyr/6dof_ik/blob/main/graphicsEngine.py
   - Custom Linear Algebra Package for 3D engine: https://github.com/zanzivyr/6dof_ik/blob/main/linalg_graphics.py
 
-## C. Path Planner
+## C) Path Planner
 Attempted to write a smooth path planner for the end-effector. The intended useage was the following:
 1) The user would use the controller to record multiple set points in the workspace
 2) These set points would be stored as a point-to-point path in the order received
@@ -63,7 +63,7 @@ After a lot of introspection, I changed my approach to use vectors and curvature
 - _Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/pathing_curvature.pdf
 - _Code_: https://github.com/zanzivyr/6dof_ik/blob/main/pathing_curvature.py
 
-## D. Motion Controller
+## D) Motion Controller
 The ultimate goal of this project was to create a motion controller which would pair with the arm allowing simple control of the end effector. It was inspired by this video: https://www.youtube.com/watch?v=xfJCUf1uD3M (Website: https://thp.io/2010/psmove/)
 
 Unfortunately I couldn't get my computer to connect with my PSMove controller. So I set out to design my own controller using salvaged components from the PSMove and an MPU6050 9-axis accelerometer. Below is the intended design.
