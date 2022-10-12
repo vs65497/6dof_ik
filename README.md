@@ -29,8 +29,8 @@ Here is code for actually running the arm.
 
 ## Arm: Notes (Math Derivations)
 Most of this project was actually mathematics. Below are the documents I wrote before coding.
- - _Inverse Kinematics Algorithm_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/ik_calculations_v2.pdf
- - _Jacobian Pseudo Inverse_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/jacobian_pseudo_inverse.pdf
+ - _Inverse Kinematics Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/ik_calculations_v2.pdf
+ - _Jacobian Pseudo Inverse Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/jacobian_pseudo_inverse.pdf
  - _Matlab_: https://github.com/zanzivyr/6dof_ik/blob/main/arm_matlab.mat
 
 ## Custom 3D Engine (Simulation)
@@ -50,12 +50,12 @@ Attempted to write a smooth path planner for the end-effector. The intended usea
 
 ### Original Algorithm, Ellipse Method (Failed)
 The Ellipse Method takes 3 points in R^3 space and tries to generate an ellipse. This ellipse then can give tangents which are used as handlebars for Bezier Curves. Thus creating a smooth path. However this did not work because of non-convex shapes (the order of the points is important). Generating an ellipse requires some constraints, but some edge cases of this approach did not follow those constraints.
-- _Derivation_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/path_planner_derivation.pdf
+- _Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/path_planner_derivation.pdf
 - _Code_: https://github.com/zanzivyr/6dof_ik/blob/main/pathing.py
 
 ### Curvature Method (Newest, Untested)
 After a lot of introspection, I changed my approach to use vectors and curvature. Combined with Bezier Curves, I imagined this would be effective. But I ended the project before testing due to schoolwork.
-- _Derivation_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/pathing_curvature.pdf
+- _Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/pathing_curvature.pdf
 - _Code_: https://github.com/zanzivyr/6dof_ik/blob/main/pathing_curvature.py
 
 ## Motion Controller
@@ -67,7 +67,7 @@ Unfortunately I couldn't get my computer to connect with my PSMove controller. S
 
 ## Miscellaneous
 - _Misc. Notes 1_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/jacobian_pseudo_inverse_matlab_notes.pdf
-- _Motor Limits_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/motor_limits_math.pdf
+- _Motor Limits Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/motor_limits_math.pdf
 - _Keyboard Test_: https://github.com/zanzivyr/6dof_ik/blob/main/keyboard_test.py
 - _Servo Test_: https://github.com/zanzivyr/6dof_ik/blob/main/servo_test.py
 
