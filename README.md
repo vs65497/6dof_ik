@@ -2,13 +2,14 @@
 
 ![Image of the Arm](https://zanzivyr.github.io/home/images/demo/arm_crop.jpg "6DoF Arm")
 
+[![IK Solving Test for Rectangular Path 1](https://img.youtube.com/vi/0N8iMFF4bWM/0.jpg)](https://youtu.be/0N8iMFF4bWM)
+
 Wrote the Inverse Kinematics Solver for this in python. Number crunching using Matlab. 
 
 This was a long and winding project in which I attempted many things. The documentation below is to organize aspects of the project.
 
 ## Videos
 Start here!
-[![IK Solving Test for Rectangular Path 1](https://img.youtube.com/vi/0N8iMFF4bWM/0.jpg)](https://youtu.be/0N8iMFF4bWM)
  - IK Solving Test for Rectangular Path 1: https://youtu.be/0N8iMFF4bWM
  - Test 2: https://youtu.be/SbTDIftg9qU
  - Servo Test: https://youtu.be/0N8iMFF4bWM
