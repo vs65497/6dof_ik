@@ -4,7 +4,7 @@
 
 Winter 2021 Personal Project. Wrote an Inverse Kinematics Solver for robotic arm with 6 degrees of freedom in python. Number crunching using Matlab. I attempted many things in this project. The documentation below is to organize aspects of the project.
 
-### Topics include:
+### Skills include:
 - Python, Javascript, Matlab
 - Linear Algebra, Calculus
   - Inverse Kinematics (6dof), Bezier Curves, Convex Shapes
