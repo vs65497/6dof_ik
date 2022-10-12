@@ -13,7 +13,7 @@ Winter 2021 Personal Project. Wrote an Inverse Kinematics Solver for robotic arm
   - Serial communications
   - PSMove Controller teardown (basic reverse engineering)
 - PSMoveAPI
-- 3D printing (PLA), Cura Slicer
+- 3D printing (PLA), Cura Slicer, Fusion360 (CAD)
 - Product Design
 - BOM Creation
 
