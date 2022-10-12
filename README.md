@@ -40,7 +40,7 @@ The Ellipse Method takes 3 points in R^3 space and tries to generate an ellipse.
 - Code: https://github.com/zanzivyr/6dof_ik/blob/main/pathing.py
 
 ## Motion Controller
-The ultimate goal of this project was to create a motion controller which would pair with the arm allowing simple control of the end effector. It was inspired by this video: https://www.youtube.com/watch?v=xfJCUf1uD3M
+The ultimate goal of this project was to create a motion controller which would pair with the arm allowing simple control of the end effector. It was inspired by this video: https://www.youtube.com/watch?v=xfJCUf1uD3M (Website: https://thp.io/2010/psmove/)
 
 Unfortunately I couldn't get my computer to connect with my PSMove controller. So I set out to design my own controller using salvaged components from the PSMove and an MPU6050 9-axis accelerometer. Below is the intended design.
 - Motion Controller Design: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/motion_controller.pdf
