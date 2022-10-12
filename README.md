@@ -27,7 +27,7 @@ Here is code for actually running the arm.
  - _PS4 Game Pad and Servo Controller_: https://github.com/zanzivyr/6dof_ik/blob/main/main.py
  - _IK Solver_: https://github.com/zanzivyr/6dof_ik/blob/main/ikSolver.py
 
-## Arm: Notes (Math Derivations)
+## Arm: Math Notes
 Most of this project was actually mathematics. Below are the documents I wrote before coding.
  - _Inverse Kinematics Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/ik_calculations_v2.pdf
  - _Jacobian Pseudo Inverse Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/jacobian_pseudo_inverse.pdf
@@ -50,7 +50,8 @@ Attempted to write a smooth path planner for the end-effector. The intended usea
 
 ### Original Algorithm, Ellipse Method (Failed)
 The Ellipse Method takes 3 points in R^3 space and tries to generate an ellipse. This ellipse then can give tangents which are used as handlebars for Bezier Curves. Thus creating a smooth path. However this did not work because of non-convex shapes (the order of the points is important). Generating an ellipse requires some constraints, but some edge cases of this approach did not follow those constraints.
-- _Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/path_planner_derivation.pdf
+- _Ellipse Method Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/path_planner_derivation.pdf
+- _Orphan Set Points Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/arm_orphans.pdf
 - _Code_: https://github.com/zanzivyr/6dof_ik/blob/main/pathing.py
 
 ### Curvature Method (Newest, Untested)
