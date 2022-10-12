@@ -4,7 +4,7 @@
 
 Wrote an Inverse Kinematics Solver for robotic arm with 6 degrees of freedom in python. Number crunching using Matlab. I attempted many things in this project. The documentation below is to organize aspects of the project.
 
-**Topics include:**
+### Topics include:
 - Python, Matlab
 - Linear Algebra, Calculus
   - Bezier Curves, Curvature, Convex Shapes
