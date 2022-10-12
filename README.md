@@ -30,7 +30,7 @@ Attempted to write a smooth path planner for the end-effector. The intended usea
 3) The Path Planner would extrapolate a smooth trajectory over these points via 3D Bezier Curves
 
 ### Curvature Method (Newest)
-After a lot of introspection, the original method of using ellipses did not work because of non-convex shapes (the order of the points is important). So, instead, I used vectors and curvature. Combined with Bezier Curves, I imagined this would be much more efficient. Unfortunately, I had to end the project before being able to test this.
+After a lot of introspection, the original method of using ellipses did not work because of non-convex shapes (the order of the points is important). So, instead, I used vectors and curvature. Combined with Bezier Curves, I imagined this would be much more efficient. But I ended the project before testing because of schoolwork.
 - Derivation: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/pathing_curvature.pdf
 - Code: https://github.com/zanzivyr/6dof_ik/blob/main/pathing_curvature.py
 
@@ -38,6 +38,12 @@ After a lot of introspection, the original method of using ellipses did not work
 The Ellipse Method takes 3 points in R^3 space and tries to generate an ellipse. This ellipse then can give tangents which are used as handlebars for Bezier Curves. Thus creating a smooth path.
 - Derivation: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/path_planner_derivation.pdf
 - Code: https://github.com/zanzivyr/6dof_ik/blob/main/pathing.py
+
+## Motion Controller
+The ultimate goal of this project was to create a motion controller which would pair with the arm allowing simple control of the end effector. It was inspired by this video: https://www.youtube.com/watch?v=xfJCUf1uD3M
+
+Unfortunately I couldn't get my computer to connect with my PSMove controller. So I set out to design my own controller using salvaged components from the PSMove and an MPU6050 9-axis accelerometer. Below is the intended design.
+- Motion Controller Design: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/motion_controller.pdf
 
 ## Miscellaneous
 - Misc. Notes 1: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/jacobian_pseudo_inverse_matlab_notes.pdf
