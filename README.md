@@ -13,6 +13,6 @@ Converted my 3D engine for simulating the arm. This helped to sort out some of m
 - Simulator Update: https://youtu.be/RmtcbHyHOPE
 - Original 3D engine via Quaternions: https://youtube.com/shorts/hPEd5JOKDyQ
 
-Miscellaneous
+## Miscellaneous
 - Misc. Notes 1: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/jacobian_pseudo_inverse_matlab_notes.pdf
 - Motor Limits: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/motor_limits_math.pdf
