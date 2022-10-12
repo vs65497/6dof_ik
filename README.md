@@ -18,9 +18,9 @@ Wrote an Inverse Kinematics Solver for robotic arm with 6 degrees of freedom in 
 - BOM Creation
 
 ## Videos
- - IK Solving Test for Rectangular Path 1: https://youtu.be/0N8iMFF4bWM
- - Test 2: https://youtu.be/SbTDIftg9qU
- - Servo Test: https://youtu.be/0N8iMFF4bWM
+ - _IK Test for Rectangular Path_: https://youtu.be/0N8iMFF4bWM
+ - _Test 2_: https://youtu.be/SbTDIftg9qU
+ - _Servo Test_: https://youtu.be/0N8iMFF4bWM
 ## Code
 Here is code for actually running the arm.
  - MAIN: PS4 Game Pad and Servo Controller: https://github.com/zanzivyr/6dof_ik/blob/main/main.py
