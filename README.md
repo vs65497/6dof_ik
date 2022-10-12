@@ -35,8 +35,6 @@ Most of this project was actually mathematics. Below are the documents I wrote b
  - _Jacobian Pseudo Inverse Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/jacobian_pseudo_inverse.pdf
  - _Matlab_: https://github.com/zanzivyr/6dof_ik/blob/main/arm_matlab.mat
 
-**Arm STL Files (courtesy of RoboLabHub):** https://github.com/RoboLabHub/RobotArm_v1.0
-
 ## B) Custom 3D Engine (Simulation)
 Converted my 3D engine for simulating the arm. Also ported from Javascript to Python. This helped to sort out some of my problems before getting to the physical arm.
 - _Simulator Update_: https://youtu.be/RmtcbHyHOPE
@@ -75,6 +73,8 @@ Unfortunately I couldn't get my computer to connect with my PSMove controller. S
 - _Motor Limits Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/motor_limits_math.pdf
 - _Keyboard Test_: https://github.com/zanzivyr/6dof_ik/blob/main/keyboard_test.py
 - _Servo Test_: https://github.com/zanzivyr/6dof_ik/blob/main/servo_test.py
+
+**Arm STL Files (courtesy of RoboLabHub):** https://github.com/RoboLabHub/RobotArm_v1.0
 
 If you want to use LX-16A Motors you'll need this zip.
 https://drive.google.com/file/d/1dBZVQSwtvPDnMTtPonr_dPYOlMWDc_09/view?usp=sharing
