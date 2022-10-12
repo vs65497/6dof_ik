@@ -49,12 +49,12 @@ Attempted to write a smooth path planner for the end-effector. The intended usea
 3) The Path Planner would extrapolate a smooth trajectory over these points via 3D Bezier Curves
 
 ### Original Algorithm, Ellipse Method (Failed)
-The Ellipse Method takes 3 points in R^3 space and tries to generate an ellipse. This ellipse then can give tangents which are used as handlebars for Bezier Curves. Thus creating a smooth path.
+The Ellipse Method takes 3 points in R^3 space and tries to generate an ellipse. This ellipse then can give tangents which are used as handlebars for Bezier Curves. Thus creating a smooth path. However this did not work because of non-convex shapes (the order of the points is important). Generating an ellipse requires some constraints, but some edge cases of this approach did not follow those constraints.
 - _Derivation_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/path_planner_derivation.pdf
 - _Code_: https://github.com/zanzivyr/6dof_ik/blob/main/pathing.py
 
 ### Curvature Method (Newest, Untested)
-After a lot of introspection, the original method of using ellipses did not work because of non-convex shapes (the order of the points is important). So, instead, I used vectors and curvature. Combined with Bezier Curves, I imagined this would be much more efficient. But I ended the project before testing because of schoolwork.
+After a lot of introspection, I changed my approach to use vectors and curvature. Combined with Bezier Curves, I imagined this would be effective. But I ended the project before testing due to schoolwork.
 - _Derivation_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/pathing_curvature.pdf
 - _Code_: https://github.com/zanzivyr/6dof_ik/blob/main/pathing_curvature.py
 
