@@ -2,7 +2,7 @@
 
 Wrote the Inverse Kinematics Solver for this in python. Number crunching using Matlab. 
 
-This was a long and winding project in which I attempted many things. The files and code are not well laid out, so the documentation below is my attempt to clarify it.
+This was a long and winding project in which I attempted many things. The documentation below is to organize aspects of the project.
 
 ## Code
  - MAIN: PS4 Game Pad and Servo Controller: https://github.com/zanzivyr/6dof_ik/blob/main/main.py
