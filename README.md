@@ -35,11 +35,11 @@ Most of this project was actually mathematics. Below are the documents I wrote b
 
 ## Custom 3D Engine (Simulation)
 Converted my 3D engine for simulating the arm. Also ported from Javascript to Python. This helped to sort out some of my problems before getting to the physical arm.
-- _Simulator Update_ (Python): https://youtu.be/RmtcbHyHOPE
+- _Simulator Update_: https://youtu.be/RmtcbHyHOPE
   - Pathing Simulator (Incomplete): https://github.com/zanzivyr/6dof_ik/blob/main/pathing_sim.py
-- _Original 3D engine via Quaternions_ (Originally written in Javascript): https://youtube.com/shorts/hPEd5JOKDyQ
-  - Original Javascript: https://github.com/zanzivyr/3d-light
-  - 3D Engine: https://github.com/zanzivyr/6dof_ik/blob/main/graphicsEngine.py
+- _Original 3D engine via Quaternions_: https://youtube.com/shorts/hPEd5JOKDyQ
+  - Original Javascript 3D Engine: https://github.com/zanzivyr/3d-light
+  - Python Port, 3D Engine: https://github.com/zanzivyr/6dof_ik/blob/main/graphicsEngine.py
   - Custom Linear Algebra Package for 3D engine: https://github.com/zanzivyr/6dof_ik/blob/main/linalg_graphics.py
 
 ## Path Planner
