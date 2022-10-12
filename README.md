@@ -18,7 +18,6 @@ Wrote an Inverse Kinematics Solver for robotic arm with 6 degrees of freedom in 
 - BOM Creation
 
 ## Videos
-Start here!
  - IK Solving Test for Rectangular Path 1: https://youtu.be/0N8iMFF4bWM
  - Test 2: https://youtu.be/SbTDIftg9qU
  - Servo Test: https://youtu.be/0N8iMFF4bWM
