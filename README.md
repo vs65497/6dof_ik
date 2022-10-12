@@ -1,6 +1,6 @@
 # Robot Arm (6 Degrees of Freedom)
 
-<img src="https://zanzivyr.github.io/home/images/demo/arm_crop.jpg" height="360"> [![IK Solving Test for Rectangular Path 1](https://img.youtube.com/vi/0N8iMFF4bWM/0.jpg)](https://youtu.be/0N8iMFF4bWM)
+<img src="https://zanzivyr.github.io/home/images/demo/arm_crop.jpg" height="360"> [![IK Solving Test for Rectangular Path 1](https://img.youtube.com/vi/lz0mPY3OvsU/0.jpg)](https://youtu.be/lz0mPY3OvsU)
 
 August 2021 - January 2022, Personal Project. Wrote an Inverse Kinematics Solver for robotic arm with 6 degrees of freedom in python. Number crunching using Matlab. I attempted many things in this project. The documentation below is to organize aspects of the project.
 
@@ -18,7 +18,7 @@ August 2021 - January 2022, Personal Project. Wrote an Inverse Kinematics Solver
 - BOM Creation
 
 ## Arm: Videos
- - _IK Test for Rectangular Path_: https://youtu.be/0N8iMFF4bWM
+ - _IK Test for Rectangular Path_: https://youtu.be/lz0mPY3OvsU
  - _Test 2_: https://youtu.be/SbTDIftg9qU
  - _Servo Test_: https://youtu.be/0N8iMFF4bWM
 
@@ -62,7 +62,8 @@ After a lot of introspection, the original method of using ellipses did not work
 The ultimate goal of this project was to create a motion controller which would pair with the arm allowing simple control of the end effector. It was inspired by this video: https://www.youtube.com/watch?v=xfJCUf1uD3M (Website: https://thp.io/2010/psmove/)
 
 Unfortunately I couldn't get my computer to connect with my PSMove controller. So I set out to design my own controller using salvaged components from the PSMove and an MPU6050 9-axis accelerometer. Below is the intended design.
-- _Motion Controller Design_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/motion_controller.pdf
+- _Attempt to reproduce PSMove Controller_ (Failed): https://youtu.be/7PIn4dRMIpQ
+- _Custom Motion Controller Design_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/motion_controller.pdf
 
 ## Miscellaneous
 - _Misc. Notes 1_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/jacobian_pseudo_inverse_matlab_notes.pdf
