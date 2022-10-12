@@ -4,7 +4,7 @@
 
 August 2021 - January 2022, Personal Project. Wrote an Inverse Kinematics Solver for robotic arm with 6 degrees of freedom in python. Number crunching using Matlab. I attempted 4 things on this project: inverse kinematics for an 6dof arm, custom simulation software, a path planner, and a motion controller. Though the design of the arm is from Thingiverse, the rest of the assembly and code of the arm is original work. The documentation below is to organize aspects of the project.
 
-**Arm STL Files:** https://github.com/RoboLabHub/RobotArm_v1.0
+**Arm STL Files (courtesy of RoboLabHub):** https://github.com/RoboLabHub/RobotArm_v1.0
 
 ### Skills include:
 - Python, Javascript, Matlab
