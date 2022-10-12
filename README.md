@@ -1,5 +1,7 @@
 # Robot Arm (6 Degrees of Freedom)
 
+![Image of the Arm](https://zanzivyr.github.io/home/images/demo/arm_crop.jpg "6DoF Arm")
+
 Wrote the Inverse Kinematics Solver for this in python. Number crunching using Matlab. 
 
 This was a long and winding project in which I attempted many things. The documentation below is to organize aspects of the project.
