@@ -25,12 +25,12 @@ Attempted to write a smooth path planner for the end-effector. The intended usea
 3) The Path Planner would extrapolate a smooth trajectory over these points
 
 ### Curvature Method (Newest)
-Derivation: https://github.com/zanzivyr/6dof_ik/blob/main/pathing_curvature.pdf
-Code: https://github.com/zanzivyr/6dof_ik/blob/main/pathing_curvature.py
+- Derivation: https://github.com/zanzivyr/6dof_ik/blob/main/pathing_curvature.pdf
+- Code: https://github.com/zanzivyr/6dof_ik/blob/main/pathing_curvature.py
 
 ### Original Algorithm (Out of date)
-Derivation: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/path_planner_derivation.pdf
-Code: https://github.com/zanzivyr/6dof_ik/blob/main/pathing.py
+- Derivation: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/path_planner_derivation.pdf
+- Code: https://github.com/zanzivyr/6dof_ik/blob/main/pathing.py
 
 ## Miscellaneous
 - Misc. Notes 1: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/jacobian_pseudo_inverse_matlab_notes.pdf
