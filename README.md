@@ -31,18 +31,18 @@ Here is code for actually running the arm.
 
 ### Math Notes
 Most of this project was actually mathematics. Below are the documents I wrote before coding.
- - _Inverse Kinematics Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/ik_calculations_v2.pdf
- - _Jacobian Pseudo Inverse Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/jacobian_pseudo_inverse.pdf
- - _Matlab_: https://github.com/zanzivyr/6dof_ik/blob/main/arm_matlab.mat
+ - _Inverse Kinematics Math Notes_: https://raw.githubusercontent.com/vs65497/6dof_ik/main/ik_calculations_v2.pdf
+ - _Jacobian Pseudo Inverse Math Notes_: https://raw.githubusercontent.com/vs65497/6dof_ik/main/jacobian_pseudo_inverse.pdf
+ - _Matlab_: https://github.com/vs65497/6dof_ik/blob/main/arm_matlab.mat
 
 ## B) Custom 3D Engine (Simulation)
 Converted my 3D engine for simulating the arm. Also ported from Javascript to Python. This helped to sort out some of my problems before getting to the physical arm.
 - _Simulator Update_: https://youtu.be/RmtcbHyHOPE
-  - Pathing Simulator (Incomplete): https://github.com/zanzivyr/6dof_ik/blob/main/pathing_sim.py
+  - Pathing Simulator (Incomplete): https://github.com/vs65497/6dof_ik/blob/main/pathing_sim.py
 - _Original 3D engine via Quaternions_: https://youtube.com/shorts/hPEd5JOKDyQ
-  - Original Javascript 3D Engine: https://github.com/zanzivyr/3d-light
-  - Python Port, 3D Engine: https://github.com/zanzivyr/6dof_ik/blob/main/graphicsEngine.py
-  - Custom Linear Algebra Package for 3D engine: https://github.com/zanzivyr/6dof_ik/blob/main/linalg_graphics.py
+  - Original Javascript 3D Engine: https://github.com/vs65497/3d-light
+  - Python Port, 3D Engine: https://github.com/vs65497/6dof_ik/blob/main/graphicsEngine.py
+  - Custom Linear Algebra Package for 3D engine: https://github.com/vs65497/6dof_ik/blob/main/linalg_graphics.py
 
 ## C) Path Planner
 Attempted to write a smooth path planner for the end-effector. The intended useage was the following:
@@ -52,27 +52,27 @@ Attempted to write a smooth path planner for the end-effector. The intended usea
 
 ### Original Algorithm, Ellipse Method (Failed)
 The Ellipse Method takes 3 points in R^3 space and tries to generate an ellipse. This ellipse then can give tangents which are used as handlebars for Bezier Curves. Thus creating a smooth path. However this did not work because of non-convex shapes (the order of the points is important). Generating an ellipse requires some constraints, but some edge cases of this approach did not follow those constraints.
-- _Ellipse Method Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/path_planner_derivation.pdf
-- _Orphan Set Points Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/arm_orphans.pdf
-- _Code_: https://github.com/zanzivyr/6dof_ik/blob/main/pathing.py
+- _Ellipse Method Math Notes_: https://raw.githubusercontent.com/vs65497/6dof_ik/main/path_planner_derivation.pdf
+- _Orphan Set Points Math Notes_: https://raw.githubusercontent.com/vs65497/6dof_ik/main/arm_orphans.pdf
+- _Code_: https://github.com/vs65497/6dof_ik/blob/main/pathing.py
 
 ### Curvature Method (Newest, Untested)
 After a lot of introspection, I changed my approach to use vectors and curvature. Combined with Bezier Curves, I imagined this would be effective. But I ended the project before testing due to schoolwork.
-- _Math Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/pathing_curvature.pdf
-- _Code_: https://github.com/zanzivyr/6dof_ik/blob/main/pathing_curvature.py
+- _Math Notes_: https://raw.githubusercontent.com/vs65497/6dof_ik/main/pathing_curvature.pdf
+- _Code_: https://github.com/vs65497/6dof_ik/blob/main/pathing_curvature.py
 
 ## D) Motion Controller
 The ultimate goal of this project was to create a motion controller which would pair with the arm allowing simple control of the end effector. It was inspired by this video: https://www.youtube.com/watch?v=xfJCUf1uD3M (Website: https://thp.io/2010/psmove/)
 
 Unfortunately I couldn't get my computer to connect with my PSMove controller. So I set out to design my own controller using salvaged components from the PSMove and an MPU6050 9-axis accelerometer. Below is the intended design.
 - _Attempt to reproduce PSMove Controller_ (Failed): https://youtu.be/7PIn4dRMIpQ
-- _Custom Motion Controller Design_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/motion_controller.pdf
+- _Custom Motion Controller Design_: https://raw.githubusercontent.com/vs65497/6dof_ik/main/motion_controller.pdf
 
 ## Miscellaneous
-- _Misc. Notes 1_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/jacobian_pseudo_inverse_matlab_notes.pdf
-- _Motor Limits Notes_: https://raw.githubusercontent.com/zanzivyr/6dof_ik/main/motor_limits_math.pdf
-- _Keyboard Test_: https://github.com/zanzivyr/6dof_ik/blob/main/keyboard_test.py
-- _Servo Test_: https://github.com/zanzivyr/6dof_ik/blob/main/servo_test.py
+- _Misc. Notes 1_: https://raw.githubusercontent.com/vs65497/6dof_ik/main/jacobian_pseudo_inverse_matlab_notes.pdf
+- _Motor Limits Notes_: https://raw.githubusercontent.com/vs65497/6dof_ik/main/motor_limits_math.pdf
+- _Keyboard Test_: https://github.com/vs65497/6dof_ik/blob/main/keyboard_test.py
+- _Servo Test_: https://github.com/vs65497/6dof_ik/blob/main/servo_test.py
 
 **Arm STL Files (courtesy of RoboLabHub):** https://github.com/RoboLabHub/RobotArm_v1.0<br />
 If you want to use LX-16A Motors you'll need this zip.
