@@ -26,8 +26,8 @@ August 2021 - January 2022, Personal Project. Wrote an Inverse Kinematics Solver
 
 ### Code (Python)
 Here is code for actually running the arm.
- - _PS4 Game Pad and Servo Controller_: https://github.com/zanzivyr/6dof_ik/blob/main/main.py
- - _IK Solver_: https://github.com/zanzivyr/6dof_ik/blob/main/ikSolver.py
+ - _PS4 Game Pad and Servo Controller_: https://github.com/vs65497/6dof_ik/blob/main/main.py
+ - _IK Solver_: https://github.com/vs65497/6dof_ik/blob/main/ikSolver.py
 
 ### Math Notes
 Most of this project was actually mathematics. Below are the documents I wrote before coding.
